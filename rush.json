@@ -340,7 +340,7 @@
   "projects": [
     {
       "packageName": "base-server",
-      "projectFolder": "servers/base-server",
+      "projectFolder": "apps-server/base-server",
       "reviewCategory": "production"
     }
 

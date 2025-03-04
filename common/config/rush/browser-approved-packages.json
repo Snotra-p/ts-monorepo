@@ -1,0 +1,110 @@
+// DO NOT ADD COMMENTS IN THIS FILE.  They will be lost when the Rush tool resaves it.
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
+  "packages": [
+    {
+      "name": "@eslint/eslintrc",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@eslint/js",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@nestjs/cli",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@nestjs/common",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@nestjs/core",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@nestjs/platform-express",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@nestjs/schematics",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@nestjs/testing",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@swc/cli",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@swc/core",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "eslint",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "eslint-config-prettier",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "eslint-plugin-prettier",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "globals",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "jest",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "prettier",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "reflect-metadata",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "rxjs",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "source-map-support",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "supertest",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "ts-jest",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "ts-loader",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "ts-node",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "tsconfig-paths",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "typescript",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "typescript-eslint",
+      "allowedCategories": [ "production" ]
+    }
+  ]
+}

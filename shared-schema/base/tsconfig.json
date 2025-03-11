@@ -21,8 +21,8 @@
     "paths": {
       "backend-common": ["../../libs-backend/common/src"],
       "backend-common/*": ["../../libs-backend/common/src/*"],
-      "schema": ["../../shared-schema/base/src"],
-      "schema/*": ["../../shared-schema/base/src/*"]
+      "base-server": ["../../apps-backend-examples/base-server/src"],
+      "base-server/*": ["../../apps-backend-examples/base-server/src/*"]
     }
   }
 }

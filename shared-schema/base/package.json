@@ -1,5 +1,5 @@
 {
-  "name": "base-api-schema",
+  "name": "base-shared-schema",
   "version": "1.0.1",
   "description": "monorepo libs",
   "scripts": {

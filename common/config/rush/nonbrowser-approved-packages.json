@@ -7,6 +7,10 @@
       "allowedCategories": [ "server-prod" ]
     },
     {
+      "name": "base-shared-schema",
+      "allowedCategories": [ "server-prod" ]
+    },
+    {
       "name": "@eslint/eslintrc",
       "allowedCategories": [ "server-prod" ]
     },

@@ -17,6 +17,12 @@
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": true,
     "strictBindCallApply": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "backend-common": ["../../libs-backend/common/src"],
+      "backend-common/*": ["../../libs-backend/common/src/*"],
+      "schema": ["../../api-schema/base/src"],
+      "schema/*": ["../../api-schema/base/src/*"]
+    }
   }
 }

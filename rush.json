@@ -134,9 +134,10 @@
       */
      "reviewCategories": [
        // Some example categories:
-       "production", // projects that ship to production
-       "tools",      // non-shipping projects that are part of the developer toolchain
-       "prototypes"  // experiments that should mostly be ignored by the review process
+       "server-prod",
+       "frontend-prod",
+       "server-dev",
+       "tool-chain"
      ],
 
      /**
@@ -219,7 +220,7 @@
      * to retrieve the latest activity for the remote main branch.
      */
     // "url": "https://github.com/microsoft/rush-example",
-    "url": "https://github.com/Snotra-p/ts-backend"
+    "url": "https://github.com/Snotra-p/ts-monorepo"
 
     /**
      * The default branch name. This tells "rush change" which remote branch to compare against.
@@ -341,7 +342,17 @@
     {
       "packageName": "base-server",
       "projectFolder": "apps-backend-examples/base-server",
-      "reviewCategory": "production"
+      "reviewCategory": "server-prod"
+    },
+    {
+      "packageName": "base-api-schema",
+      "projectFolder": "api-schema/base",
+      "reviewCategory": "server-prod"
+    },
+    {
+      "packageName": "backend-common",
+      "projectFolder": "libs-backend/common",
+      "reviewCategory": "server-prod"
     }
 
     // {

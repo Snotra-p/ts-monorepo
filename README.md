@@ -1,2 +1,2 @@
-# ts-backend
+# ts-monorepo
 my typescript backend for lecture

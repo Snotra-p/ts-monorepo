@@ -115,7 +115,7 @@ lib-commonjs/
 lib-shim/
 dist/
 dist-storybook/
-*.tsbuildinfo
+#*.tsbuildinfo
 
 # Heft temporary files
 .cache/

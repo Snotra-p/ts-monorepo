@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { createZodDto } from "backend-common/common/dto";
+import { createZodDto } from "@BE-common/common/dto";
 
 import { commonUserSchema } from "../user.schema";
 

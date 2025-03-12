@@ -5,7 +5,7 @@ import {
   PrimaryGeneratedColumn,
 } from 'typeorm';
 import { z } from 'zod';
-import { userPersistenceSchema } from 'schema/user/user.schema';
+import { userPersistenceSchema } from '@schema/user/user.schema';
 
 export type UserPropertyPersistence = z.infer<typeof userPersistenceSchema>;
 

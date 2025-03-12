@@ -19,10 +19,10 @@
     "strictBindCallApply": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "backend-common": ["../../libs-backend/common/src"],
-      "backend-common/*": ["../../libs-backend/common/src/*"],
-      "base-server": ["../../apps-backend-examples/base-server/src"],
-      "base-server/*": ["../../apps-backend-examples/base-server/src/*"]
+      "@BE-common": ["../../libs-backend/common/src"],
+      "@BE-common/*": ["../../libs-backend/common/src/*"],
+      "@base-server": ["../../apps-backend-examples/base-server/src"],
+      "@base-server/*": ["../../apps-backend-examples/base-server/src/*"]
     }
   }
 }

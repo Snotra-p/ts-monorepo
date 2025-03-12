@@ -19,10 +19,10 @@
     "strictBindCallApply": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "backend-common": ["../../libs-backend/common/src"],
-      "backend-common/*": ["../../libs-backend/common/src/*"],
-      "schema": ["../../shared-schema/base/src"],
-      "schema/*": ["../../shared-schema/base/src/*"]
+      "@BE-common": ["../../libs-backend/common/src"],
+      "@BE-common/*": ["../../libs-backend/common/src/*"],
+      "@schema": ["../../shared-schema/base/src"],
+      "@schema/*": ["../../shared-schema/base/src/*"]
     }
   }
 }

@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 import { commonUserSchema } from "../user.schema";
-import { createZodDto } from "@BE-common/common/dto";
+import { createZodDto } from "@BE-common/base/dto";
 
 export const createUserIn = commonUserSchema.omit({ id: true });
 

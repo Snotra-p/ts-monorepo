@@ -1,5 +1,5 @@
-import { DomainEntity } from '@BE-common/common/entity';
-import { Id } from '@BE-common/common/schema';
+import { DomainEntity } from '@BE-common/base/domain-entity';
+import { Id } from '@BE-common/base/schema';
 import { userSchema } from '@schema/user/user.schema';
 import { z } from 'zod';
 

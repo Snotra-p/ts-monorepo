@@ -3,14 +3,6 @@
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
   "packages": [
     {
-      "name": "backend-common",
-      "allowedCategories": [ "server-prod" ]
-    },
-    {
-      "name": "base-shared-schema",
-      "allowedCategories": [ "server-prod" ]
-    },
-    {
       "name": "@eslint/eslintrc",
       "allowedCategories": [ "server-prod" ]
     },
@@ -56,6 +48,14 @@
     },
     {
       "name": "@swc/core",
+      "allowedCategories": [ "server-prod" ]
+    },
+    {
+      "name": "backend-common",
+      "allowedCategories": [ "server-prod" ]
+    },
+    {
+      "name": "base-shared-schema",
       "allowedCategories": [ "server-prod" ]
     },
     {
@@ -132,6 +132,14 @@
     },
     {
       "name": "zod",
+      "allowedCategories": [ "server-prod" ]
+    },
+    {
+      "name": "zod-openapi",
+      "allowedCategories": [ "server-prod" ]
+    },
+    {
+      "name": "@nestjs/swagger",
       "allowedCategories": [ "server-prod" ]
     }
   ]

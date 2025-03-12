@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { baseSchema } from "@BE-common/common/schema";
+import { baseSchema } from "@BE-common/base/schema";
 
 export const commonUserSchema = baseSchema.extend({
   firstName: z.string(),

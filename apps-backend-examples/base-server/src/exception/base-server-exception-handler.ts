@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { ExceptionHandler } from '@BE-common/filter/abstract-error-handler';
+import { ExceptionHandler } from '@BE-common/filter/handler/abstract-error-handler';
 import { ResponseEntity } from '@BE-common/base/response-entity';
 import { BaseServerException } from '@schema/exception/base-server-exception';
 

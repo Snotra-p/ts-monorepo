@@ -1,6 +1,6 @@
 import { ArgumentsHost, Catch, ExceptionFilter, Inject, Logger } from '@nestjs/common';
 import { HttpAdapterHost } from '@nestjs/core';
-import { ErrorHandlers, ExceptionHandler } from './abstract-error-handler';
+import { ErrorHandlers, ExceptionHandler } from './handler/abstract-error-handler';
 import { IGNORE_LOGGING_KEY } from '../exception/abstract-server-exception';
 import { ErrorOutDto } from '../base/error-out.dto';
 

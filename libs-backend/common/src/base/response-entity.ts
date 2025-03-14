@@ -34,7 +34,7 @@ export class ResponseEntity<T> {
   static error(
     errorCode: number,
     message: string,
-    httpStatus: HttpStatus = HttpStatus.BAD_REQUEST,
+    httpStatus: HttpStatus = HttpStatus.INTERNAL_SERVER_ERROR,
   ): ResponseEntity<undefined> {
     return new ResponseEntity<undefined>({
       code: httpStatus,

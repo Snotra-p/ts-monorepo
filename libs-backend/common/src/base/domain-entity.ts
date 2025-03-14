@@ -4,10 +4,7 @@ export abstract class DomainEntity<T> {
     this.initialize();
   }
 
-  static from<T, U extends DomainEntity<T>>(
-    this: new (data: T) => U,
-    data: T,
-  ): U & T {
+  static from<T, U extends DomainEntity<T>>(this: new (data: T) => U, data: T): U & T {
     return new this(data) as U & T;
   }
 

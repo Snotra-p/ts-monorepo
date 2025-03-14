@@ -19,7 +19,7 @@
    * will recalculate all version selections.
    */
   "preferredVersions": {
-    "@nestjs/common":  "^11.0.1"
+    "@nestjs/common": "^11.0.1"
     /**
      * When someone asks for "^1.0.0" make sure they get "1.2.3" when working in this repo,
      * instead of the latest version.
@@ -74,8 +74,6 @@
     // "typescript": [
     //   "~2.4.0"
     // ]
-
-
-//    "@nestjs/common":  ["^11.0.0","^11.0.1"]
+    //    "@nestjs/common":  ["^11.0.0","^11.0.1"]
   }
 }

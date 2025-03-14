@@ -1,7 +1,7 @@
-import { z } from "zod";
-import { createZodDto } from "@BE-common/base/dto";
+import { z } from 'zod';
+import { createZodDto } from '@BE-common/base/dto';
 
-import { commonUserSchema } from "../user.schema";
+import { commonUserSchema } from '../user.schema';
 
 export const updateUserIn = commonUserSchema.pick({ email: true });
 

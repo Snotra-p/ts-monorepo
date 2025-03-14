@@ -1,14 +1,8 @@
-import {
-  ArgumentsHost,
-  Catch,
-  ExceptionFilter,
-  Inject,
-  Logger,
-} from "@nestjs/common";
-import { HttpAdapterHost } from "@nestjs/core";
-import { ErrorHandlers, ExceptionHandler } from "./abstract-error-handler";
-import { IGNORE_LOGGING_KEY } from "../exception/abstract-server-exception";
-import { ErrorOutDto } from "../base/error-out.dto";
+import { ArgumentsHost, Catch, ExceptionFilter, Inject, Logger } from '@nestjs/common';
+import { HttpAdapterHost } from '@nestjs/core';
+import { ErrorHandlers, ExceptionHandler } from './abstract-error-handler';
+import { IGNORE_LOGGING_KEY } from '../exception/abstract-server-exception';
+import { ErrorOutDto } from '../base/error-out.dto';
 
 type LoggingErrorFormat = ErrorOutDto & {
   statusCode: number;
@@ -20,7 +14,7 @@ type LoggingErrorFormat = ErrorOutDto & {
 export class AllExceptionFilter implements ExceptionFilter {
   constructor(
     private readonly httpAdapterHost: HttpAdapterHost,
-    @Inject(ErrorHandlers) private readonly errorHandlers: ExceptionHandler[],
+    @Inject(ErrorHandlers) private readonly errorHandlers: ExceptionHandler[]
   ) {}
 
   catch(exception: object, host: ArgumentsHost): void {
@@ -34,13 +28,13 @@ export class AllExceptionFilter implements ExceptionFilter {
 
     // when production, remove error message
     const body =
-      process.env.NODE_ENV === "prod"
+      process.env.NODE_ENV === 'prod'
         ? {
             ...responseEntity,
             error: {
               ...responseEntity.error,
-              message: undefined,
-            },
+              message: undefined
+            }
           }
         : responseEntity;
 
@@ -48,7 +42,7 @@ export class AllExceptionFilter implements ExceptionFilter {
 
     const log: LoggingErrorFormat = {
       ...responseEntity.error!,
-      statusCode: responseEntity.code,
+      statusCode: responseEntity.code
     };
 
     if (IGNORE_LOGGING_KEY in exception) {

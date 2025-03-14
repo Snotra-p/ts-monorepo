@@ -1,7 +1,7 @@
-import { Injectable } from "@nestjs/common";
-import { ExceptionHandler } from "./abstract-error-handler";
-import { ResponseEntity } from "../base/response-entity";
-import { SERVER_ERROR_CODE } from "../constant/server-error-code";
+import { Injectable } from '@nestjs/common';
+import { ExceptionHandler } from './abstract-error-handler';
+import { ResponseEntity } from '../base/response-entity';
+import { SERVER_ERROR_CODE } from '../constant/server-error-code';
 
 @Injectable()
 export class UnhandledExceptionHandler implements ExceptionHandler {
@@ -10,9 +10,6 @@ export class UnhandledExceptionHandler implements ExceptionHandler {
   }
 
   getErrorResponse(exception: Error): ResponseEntity<undefined> {
-    return ResponseEntity.error(
-      SERVER_ERROR_CODE.UNKNOWN_ERROR_CODE,
-      exception.message,
-    );
+    return ResponseEntity.error(SERVER_ERROR_CODE.UNKNOWN_ERROR_CODE, exception.message);
   }
 }

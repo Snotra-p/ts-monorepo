@@ -4,143 +4,143 @@
   "packages": [
     {
       "name": "@eslint/eslintrc",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "@eslint/js",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "@nestjs/cli",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "@nestjs/common",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "@nestjs/core",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "@nestjs/mapped-types",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "@nestjs/platform-express",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "@nestjs/schematics",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "@nestjs/testing",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "@nestjs/typeorm",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "@swc/cli",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "@swc/core",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "backend-common",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "base-shared-schema",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "eslint",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "eslint-config-prettier",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "eslint-plugin-prettier",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "globals",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "jest",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "pg",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "prettier",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "reflect-metadata",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "rxjs",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "source-map-support",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "supertest",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "ts-jest",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "ts-loader",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "ts-node",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "tsconfig-paths",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "typeorm",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "typescript",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "typescript-eslint",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "zod",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "zod-openapi",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     },
     {
       "name": "@nestjs/swagger",
-      "allowedCategories": [ "server-prod" ]
+      "allowedCategories": ["server-prod"]
     }
   ]
 }

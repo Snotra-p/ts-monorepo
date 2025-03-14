@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { z } from 'zod';
 
 // DTO 클래스 타입
 export interface ZodDto<T> {

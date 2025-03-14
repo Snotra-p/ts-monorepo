@@ -1,7 +1,7 @@
-import { HttpStatus } from "@nestjs/common";
-import { ApiProperty, ApiPropertyOptional } from "@nestjs/swagger";
-import { ErrorOutDto } from "./error-out.dto";
-import { PaginationOutDto } from "./pagination-out.dto";
+import { HttpStatus } from '@nestjs/common';
+import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
+import { ErrorOutDto } from './error-out.dto';
+import { PaginationOutDto } from './pagination-out.dto';
 
 export class ResponseEntity<T> {
   @ApiProperty() readonly code: HttpStatus;
@@ -10,12 +10,7 @@ export class ResponseEntity<T> {
   @ApiPropertyOptional() readonly error?: ErrorOutDto;
   @ApiPropertyOptional() readonly pagination?: PaginationOutDto;
 
-  constructor(options: {
-    code?: HttpStatus;
-    data?: T;
-    error?: ErrorOutDto;
-    pagination?: PaginationOutDto;
-  }) {
+  constructor(options: { code?: HttpStatus; data?: T; error?: ErrorOutDto; pagination?: PaginationOutDto }) {
     this.code = options.code || HttpStatus.OK;
     this.success = !options.error && (options.code || HttpStatus.OK) < 400;
     this.data = options.data;
@@ -27,18 +22,18 @@ export class ResponseEntity<T> {
     return new ResponseEntity<T>({
       code: HttpStatus.OK,
       data,
-      pagination,
+      pagination
     });
   }
 
   static error(
     errorCode: number,
     message: string,
-    httpStatus: HttpStatus = HttpStatus.INTERNAL_SERVER_ERROR,
+    httpStatus: HttpStatus = HttpStatus.INTERNAL_SERVER_ERROR
   ): ResponseEntity<undefined> {
     return new ResponseEntity<undefined>({
       code: httpStatus,
-      error: new ErrorOutDto(errorCode, message),
+      error: new ErrorOutDto(errorCode, message)
     });
   }
 }

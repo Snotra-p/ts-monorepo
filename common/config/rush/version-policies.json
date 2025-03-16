@@ -45,7 +45,7 @@
 //   "nextBump": "prerelease",
 //
 //   /**
-//    * (Optional) If specified, all packages in the set share a common CHANGELOG.md file.
+//    * (Optional) If specified, all packages in the set share a backend CHANGELOG.md file.
 //    * This file is stored with the specified "main" project, which must be a member of the set.
 //    *
 //    * If this field is omitted, then a separate CHANGELOG.md file will be maintained for each
@@ -80,7 +80,7 @@
 //   "policyName": "MyRandomLibraries",
 //
 //   /**
-//    * (Optional) This can be used to enforce that all packages in the set must share a common
+//    * (Optional) This can be used to enforce that all packages in the set must share a backend
 //    * major version number, e.g. because they are from the same major release branch.
 //    * It can also be used to discourage people from accidentally making "MAJOR" SemVer changes
 //    * inappropriately.  The minor/patch version parts will be bumped independently according

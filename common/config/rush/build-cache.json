@@ -121,9 +121,9 @@
      * (Optional) Shell command that prints the authorization token needed to communicate with the
      * cache server, and exits with exit code 0. This command will be executed from the root of
      * the monorepo.
-     * Example: { "exec": "node", "args": ["common/scripts/auth.js"] }
+     * Example: { "exec": "node", "args": ["backend/scripts/auth.js"] }
      */
-    // "tokenHandler": { "exec": "node", "args": ["common/scripts/auth.js"] },
+    // "tokenHandler": { "exec": "node", "args": ["backend/scripts/auth.js"] },
     /**
      * (Optional) Prefix for cache keys.
      * Example: "my-company-"

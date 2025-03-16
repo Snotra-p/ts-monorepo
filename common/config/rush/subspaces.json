@@ -29,7 +29,7 @@
   /**
    * The list of subspace names, which should be lowercase alphanumeric words separated by
    * hyphens, for example "my-subspace".  The corresponding config files will have paths
-   * such as "common/config/subspaces/my-subspace/package-lock.yaml".
+   * such as "backend/config/subspaces/my-subspace/package-lock.yaml".
    */
   "subspaceNames": []
 }

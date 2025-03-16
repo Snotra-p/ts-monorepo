@@ -19,8 +19,8 @@
     "strictBindCallApply": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "@BE-common": ["../../libs-backend/common/src"],
-      "@BE-common/*": ["../../libs-backend/common/src/*"],
+      "@BE-common": ["../../libs/backend/src"],
+      "@BE-common/*": ["../../libs/backend/src/*"],
       "@schema": ["../../shared-schema/base/src"],
       "@schema/*": ["../../shared-schema/base/src/*"]
     }

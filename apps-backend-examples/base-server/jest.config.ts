@@ -13,7 +13,7 @@ const config: Config = {
   testEnvironment: 'node',
   roots: ['<rootDir>/src/'],
   moduleNameMapper: {
-    '^@BE-common(|/.*)$': '<rootDir>/../../libs-backend/common/src/$1',
+    '^@BE-common(|/.*)$': '<rootDir>/../../libs/backend/src/$1',
     '^@schema(|/.*)$': '<rootDir>/../../shared-schema/base/src/$1',
   },
   workerThreads: true,

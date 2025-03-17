@@ -10,7 +10,7 @@
    * Rush's "version selector" feature ensures that the globally installed tool will
    * behave like this release, regardless of which version is installed globally.
    *
-   * The backend/scripts/install-run-rush.js automation script also uses this version.
+   * The common/scripts/install-run-rush.js automation script also uses this version.
    *
    * NOTE: If you upgrade to a new major version of Rush, you should replace the "v5"
    * path segment in the "$schema" field for all your Rush config files.  This will ensure
@@ -127,7 +127,7 @@
      *
      * Each project can be associated with one review category, by assigning the "reviewCategory" field
      * in the "projects" section of rush.json.  The approval is then recorded in the files
-     * "backend/config/rush/browser-approved-packages.json" and "nonbrowser-approved-packages.json"
+     * "common/config/rush/browser-approved-packages.json" and "nonbrowser-approved-packages.json"
      * which are automatically generated during "rush update".
      *
      * Designate categories with whatever granularity is appropriate for your review process,
@@ -240,7 +240,7 @@
      * A list of shell commands to run before "rush install" or "rush update" starts installation
      */
     "preRushInstall": [
-      // "backend/scripts/pre-rush-install.js"
+      // "common/scripts/pre-rush-install.js"
     ],
 
     /**
@@ -278,7 +278,7 @@
    *
    * Rush "installation variants" correspond to sets of config files located under this folder:
    *
-   *   backend/config/rush/variants/<variant_name>
+   *   common/config/rush/variants/<variant_name>
    *
    * The variant folder can contain an alternate backend-versions.json file.  Its "preferredVersions" field can be used
    * to select older versions of dependencies (within a loose SemVer range specified in your package.json files).
@@ -304,7 +304,7 @@
    * Rush can collect anonymous telemetry about everyday developer activity such as
    * success/failure of installs, builds, and other operations.  You can use this to identify
    * problems with your toolchain or Rush itself.  THIS TELEMETRY IS NOT SHARED WITH MICROSOFT.
-   * It is written into JSON files in the backend/temp folder.  It's up to you to write scripts
+   * It is written into JSON files in the common/temp folder.  It's up to you to write scripts
    * that read these JSON files and do something with them.  These scripts are typically registered
    * in the "eventHooks" section.
    */

@@ -11,11 +11,13 @@ export const commonUserSchema = baseSchema.extend({
   email: z.string().email().optional()
 });
 
+export type UserProperty = z.infer<typeof userSchema>;
 // user domain schema
 export const userSchema = commonUserSchema.extend({
   fullName: z.string()
 });
 
+export type UserPersistenceProperty = z.infer<typeof userPersistenceSchema>;
 // user persistence schema
 export const userPersistenceSchema = commonUserSchema.extend({
   version: z.number().optional(),

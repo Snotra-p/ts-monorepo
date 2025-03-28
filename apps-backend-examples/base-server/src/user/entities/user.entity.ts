@@ -1,11 +1,7 @@
-import { DomainEntity } from '@BE-common/base/domain-entity';
 import { Id } from '@BE-common/base/schema';
-import { userSchema } from '@schema/user/user.schema';
-import { z } from 'zod';
+import { UserProperty } from '@schema/user/user.schema';
 
-export type UserProperty = z.infer<typeof userSchema>;
-
-export class User extends DomainEntity<UserProperty> implements UserProperty {
+export class User implements UserProperty {
   id!: Id;
   age!: number;
   firstName!: string;
@@ -13,7 +9,7 @@ export class User extends DomainEntity<UserProperty> implements UserProperty {
   fullName!: string;
   email?: string;
 
-  protected initialize() {
-    this.fullName = `${this.firstName} ${this.lastName}`;
+  getFullName(): string {
+    return `${this.firstName} ${this.lastName}`;
   }
 }

@@ -4,13 +4,10 @@ import {
   Entity,
   PrimaryGeneratedColumn,
 } from 'typeorm';
-import { z } from 'zod';
-import { userPersistenceSchema } from '@schema/user/user.schema';
-
-export type UserPropertyPersistence = z.infer<typeof userPersistenceSchema>;
+import { UserPersistenceProperty } from '@schema/user/user.schema';
 
 @Entity()
-export class UserPersistence implements UserPropertyPersistence {
+export class UserPersistence implements UserPersistenceProperty {
   @PrimaryGeneratedColumn()
   id!: number;
 

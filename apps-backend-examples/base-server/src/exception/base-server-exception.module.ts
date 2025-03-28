@@ -6,8 +6,10 @@ import {
   ExceptionHandler,
 } from '@BE-common/filter/handler/abstract-error-handler';
 import { UnhandledExceptionHandler } from '@BE-common/filter/handler/unhandled-exception-handler';
+import { ZodExceptionHandler } from '@BE-common/filter/handler/zod-exception-handler';
 
 const errorHandlers = [
+  ZodExceptionHandler,
   BaseServerExceptionHandler,
   HttpExceptionHandler,
   UnhandledExceptionHandler,

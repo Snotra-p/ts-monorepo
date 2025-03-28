@@ -1,15 +1,13 @@
 import { Injectable } from '@nestjs/common';
 import { CreateUserInDto } from '@schema/user/dto/create-user-in.dto';
 import { UpdateUserInDto } from '@schema/user/dto/update-user-in.dto';
-import { UserPersistence } from '../infrastructure/persistence/user.persistence';
 import { UserMapper } from './user-mapper';
+import { UserPersistence } from '../infrastructure/persistence/user.persistence';
 
 @Injectable()
 export class UserService {
   create(createUserDto: CreateUserInDto) {
-    const userPersistence = new UserPersistence();
-
-    const user = UserMapper.fromPersistence(userPersistence);
+    const user = UserMapper.fromPersistence(new UserPersistence());
 
     return UserMapper.toDto(user);
   }

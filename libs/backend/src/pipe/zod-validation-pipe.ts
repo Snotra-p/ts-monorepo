@@ -1,5 +1,6 @@
 // 글로벌 검증 파이프
 import { ArgumentMetadata, BadRequestException, Injectable, PipeTransform } from '@nestjs/common';
+import { ZodError } from 'zod';
 
 @Injectable()
 export class ZodValidationPipe implements PipeTransform {
@@ -16,10 +17,20 @@ export class ZodValidationPipe implements PipeTransform {
       return (metatype as any).schema.parse(value);
     } catch (error) {
       // 오류 처리
-      throw new BadRequestException({
-        message: 'Validation failed',
-        errors: error
-      });
+      if (error instanceof ZodError) {
+        const message = error.issues
+          .map((issue) => {
+            const path = issue.path.length ? issue.path.join('.') : 'root';
+            return `${path}: ${issue.message}`;
+          })
+          .join(' | ');
+
+        throw new BadRequestException({
+          message: message
+        });
+      }
+
+      throw error;
     }
   }
 }

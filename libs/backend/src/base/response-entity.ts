@@ -12,7 +12,7 @@ export class ResponseEntity<T> {
 
   constructor(options: { code?: HttpStatus; data?: T; error?: ErrorOutDto; pagination?: PaginationOutDto }) {
     this.code = options.code || HttpStatus.OK;
-    this.success = !options.error && (options.code || HttpStatus.OK) < 400;
+    this.success = !options.error && this.code < HttpStatus.CONTENT_DIFFERENT;
     this.data = options.data;
     this.error = options.error;
     this.pagination = options.pagination;

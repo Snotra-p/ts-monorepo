@@ -19,6 +19,10 @@
       "allowedCategories": [ "server-prod" ]
     },
     {
+      "name": "@nestjs/config",
+      "allowedCategories": [ "server-prod" ]
+    },
+    {
       "name": "@nestjs/core",
       "allowedCategories": [ "server-prod" ]
     },
@@ -136,14 +140,6 @@
     },
     {
       "name": "zod",
-      "allowedCategories": [ "server-prod" ]
-    },
-    {
-      "name": "@anatine/zod-openapi",
-      "allowedCategories": [ "server-prod" ]
-    },
-    {
-      "name": "openapi3-ts",
       "allowedCategories": [ "server-prod" ]
     }
   ]

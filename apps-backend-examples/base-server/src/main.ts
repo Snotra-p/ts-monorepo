@@ -7,7 +7,7 @@ import {
 } from '@nestjs/swagger';
 import { SwaggerUiOptions } from '@nestjs/swagger/dist/interfaces/swagger-ui-options.interface';
 
-async function bootstrap() {
+async function bootstrap(): Promise<void> {
   const app = await NestFactory.create(AppModule);
 
   const swaggerBuilder = new DocumentBuilder()
@@ -27,4 +27,5 @@ async function bootstrap() {
 
   await app.listen(process.env.PORT ?? 3000);
 }
-bootstrap();
+
+bootstrap().then(() => {});

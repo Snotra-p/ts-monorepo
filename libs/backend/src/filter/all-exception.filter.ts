@@ -19,7 +19,11 @@ export class AllExceptionFilter implements ExceptionFilter {
 
   catch(exception: object, host: ArgumentsHost): void {
     // it is must be exist
-    const handler = this.errorHandlers.find((it) => it.canHandle(exception))!;
+    const handler = this.errorHandlers.find((it) => it.canHandle(exception));
+    if (!handler) {
+      // it never called
+      return;
+    }
 
     const responseEntity = handler.getErrorResponse(exception);
 
@@ -41,7 +45,7 @@ export class AllExceptionFilter implements ExceptionFilter {
     httpAdapter.reply(ctx.getResponse(), body, responseEntity.code);
 
     const log: LoggingErrorFormat = {
-      ...responseEntity.error!,
+      ...responseEntity.error,
       statusCode: responseEntity.code
     };
 

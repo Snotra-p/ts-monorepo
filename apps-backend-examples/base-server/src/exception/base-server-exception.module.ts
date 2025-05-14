@@ -21,7 +21,8 @@ const errorHandlers = [
     {
       inject: errorHandlers,
       provide: ErrorHandlers,
-      useFactory: (...errorHandlers: ExceptionHandler[]) => errorHandlers,
+      useFactory: (...errorHandlers: ExceptionHandler[]): ExceptionHandler[] =>
+        errorHandlers,
     },
   ],
   exports: [ErrorHandlers],

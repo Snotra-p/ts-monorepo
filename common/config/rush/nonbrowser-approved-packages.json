@@ -3,6 +3,14 @@
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
   "packages": [
     {
+      "name": "mysql2",
+      "allowedCategories": [ "server-prod" ]
+    },
+    {
+      "name": "openapi3-ts",
+      "allowedCategories": [ "server-prod" ]
+    },
+    {
       "name": "@eslint/eslintrc",
       "allowedCategories": [ "server-prod" ]
     },

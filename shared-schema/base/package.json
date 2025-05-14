@@ -11,7 +11,7 @@
   "license": "ISC",
   "packageManager": "pnpm@10.4.1",
   "dependencies": {
-    "zod": "4.0.0-beta.20250412T085909",
+    "zod": "4.0.0-beta.20250505T195954",
     "@nestjs/common": "^11.0.1"
   },
   "devDependencies": {

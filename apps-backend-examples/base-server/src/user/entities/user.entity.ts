@@ -1,7 +1,8 @@
-import { Id } from '@BE-common/base/schema';
+import { Id, StrictPropsMatch } from '@BE-common/base/schema';
+import { Entity } from '@BE-common/base/entity';
 import { UserProperty } from '@schema/user/user.schema';
 
-export class User implements UserProperty {
+export class User extends Entity {
   id!: Id;
   age!: number;
   firstName!: string;
@@ -13,3 +14,6 @@ export class User implements UserProperty {
     return `${this.firstName} ${this.lastName}`;
   }
 }
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const _checkSchema: StrictPropsMatch<UserProperty, User> = true;

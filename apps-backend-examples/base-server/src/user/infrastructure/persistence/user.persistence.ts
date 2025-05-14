@@ -21,7 +21,7 @@ export class UserPersistence implements UserPersistenceProperty {
   age!: number;
 
   @CreateDateColumn({
-    type: 'timestamptz',
+    type: 'datetime',
   })
   createdAt!: Date;
 }

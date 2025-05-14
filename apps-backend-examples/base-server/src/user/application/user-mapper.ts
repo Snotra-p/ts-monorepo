@@ -10,7 +10,7 @@ export class UserMapper {
       fullName: persistence.firstName + ' ' + persistence.lastName,
     } satisfies UserProperty;
 
-    return Object.assign(new User(), userSchema.parse(userProperty));
+    return User.create(userSchema.parse(userProperty));
   }
 
   static toDto(user: User): UserDto {

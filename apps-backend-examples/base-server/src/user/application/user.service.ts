@@ -3,11 +3,14 @@ import { CreateUserInDto } from '@schema/user/dto/create-user-in.dto';
 import { UpdateUserInDto } from '@schema/user/dto/update-user-in.dto';
 import { UserMapper } from './user-mapper';
 import { UserPersistence } from '../infrastructure/persistence/user.persistence';
+import { User } from '../entities/user.entity';
 
 @Injectable()
 export class UserService {
   create(createUserDto: CreateUserInDto) {
     const user = UserMapper.fromPersistence(new UserPersistence());
+
+    const userTest = User.create({});
 
     return UserMapper.toDto(user);
   }
